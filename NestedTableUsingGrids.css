@@ -1,0 +1,140 @@
+/* 
+    Created on : May 1, 2018, 7:48:54 PM
+    Author     : Ridhaa Cupido
+*/
+/*Styles for main container*/
+.main-container{
+    display: grid;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr;
+}
+
+/* Using normal positioning i.e. grid-column/grid-row */
+.main-container1{
+    width: 500px;
+    border:20px solid #000;
+    display: grid;
+    grid-template-columns:100px 100px 100px 100px 100px;
+    grid-template-rows:100px 100px 100px 100px;
+}
+.main-container1 p{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.main-container1 .one{
+    border:5px solid #000;
+}
+.main-container1 .two{
+    grid-column:2/6;
+    border:5px solid #000;
+}
+.main-container1 .three{
+    grid-row:2/5;
+    border:5px solid #000;
+}
+.main-container1 .four{
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container1 .five{
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container1 .six{
+    background-color: #ffff00;
+    grid-column:4/6;
+    grid-row:2/4;
+    border:5px solid #000;
+}
+.main-container1 .seven{
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container1 .eight{
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container1 .nine{
+    background-color: #ffff00;
+    grid-column:2/4;
+    border:5px solid #000;
+}
+.main-container1 .ten{
+    background-color: #ffff00;
+    grid-column:4/6;
+    border:5px solid #000;
+}
+
+
+/*Using grid area*/
+
+
+.main-container2{
+
+    width: 500px;
+    border:20px solid #000;
+    display: grid;
+    grid-template-columns:100px 100px 100px 100px 100px;
+    grid-template-rows:100px 100px 100px 100px;
+    grid-template-areas:"one two two two two"
+                        "three four five six six"
+                        "three seven eight six six"
+                        "three nine nine ten ten";
+}
+.main-container2 p{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+.main-container2 .one{
+    grid-area:one;
+    border:5px solid #000;
+}
+.main-container2 .two{
+    grid-area:two;
+    border:5px solid #000;
+}
+.main-container2 .three{
+    grid-area:three;
+
+    border:5px solid #000;
+}
+.main-container2 .four{
+    grid-area:four;
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container2 .five{
+    grid-area:five;
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container2 .six{
+    grid-area:six;
+    background-color: #ffff00;
+    border:5px solid #000;
+}
+.main-container2 .seven{
+    grid-area:seven;
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container2 .eight{
+    grid-area:eight;
+    background-color: #ff7f00;
+    border:5px solid #000;
+}
+.main-container2 .nine{
+    grid-area:nine;
+    background-color: #ffff00;
+    border:5px solid #000;
+}
+.main-container2 .ten{
+    grid-area:ten;
+    background-color: #ffff00;
+    border:5px solid #000;
+}
